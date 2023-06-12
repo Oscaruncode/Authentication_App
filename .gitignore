@@ -1,0 +1,24 @@
+# Logs
+/auth-Front/logs
+*.log
+/auth-Front/npm-debug.log*
+/auth-Front/yarn-debug.log*
+/auth-Front/yarn-error.log*
+/auth-Front/pnpm-debug.log*
+/auth-Front/lerna-debug.log*
+
+/auth-Front/node_modules
+/auth-Front/dist
+/auth-Front/dist-ssr
+/auth-Front/*.local
+
+# Editor directories and files
+/auth-Front/.vscode/*
+/auth-Front/!.vscode/extensions.json
+/auth-Front/.idea
+/auth-Front/.DS_Store
+/auth-Front/*.suo
+/auth-Front/*.ntvs*
+/auth-Front/*.njsproj
+/auth-Front/*.sln
+/auth-Front/*.sw?
