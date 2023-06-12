@@ -8,6 +8,7 @@
 /auth-Front/lerna-debug.log*
 
 /auth-Front/node_modules
+auth-back/node_modules/
 /auth-Front/dist
 /auth-Front/dist-ssr
 /auth-Front/*.local
