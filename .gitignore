@@ -23,3 +23,7 @@ auth-back/node_modules/
 /auth-Front/*.njsproj
 /auth-Front/*.sln
 /auth-Front/*.sw?
+
+#.env
+auth-back/.env
+auth-Front/.env
