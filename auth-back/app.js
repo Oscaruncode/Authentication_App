@@ -5,12 +5,21 @@ const mongoose = require("mongoose")
 const app = express()
 
 const port = process.env.PORT || 5000;
+const mongoConnect = process.env.DB_CONNECTION_STRING;
 
 //middlewares
 app.use(cors())
 app.use(express.json())
 
-//routes
+async function main() {
+    await mongoose.connect(mongoConnect);
+    console.log("connected to DB")
+
+}
+
+main().catch(console.error)
+
+
 app.use("/api/signup", require("./routes/signup"))
 app.use("/api/login", require("./routes/login"))
 app.use("/api/signout", require("./routes/signout"))

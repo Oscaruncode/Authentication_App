@@ -7,7 +7,7 @@ export interface AuthResponse{
 }
 
 export interface User{   
-        _id:string;
+        id:string;
         name:string;
         username:string;
 }

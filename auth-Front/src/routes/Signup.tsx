@@ -57,7 +57,7 @@ export default function Signup(){
         <label>Password</label>
         <input type="password" value={password} onChange={e=>{setPassword(e.target.value)}}/>
 
-        <button>Createuser</button>
+        <button>Create user</button>
         </form>
         </DefaultLayout>
     )

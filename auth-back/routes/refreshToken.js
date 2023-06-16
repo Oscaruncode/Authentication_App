@@ -1,7 +1,7 @@
 const router = require("express").Router()
 
 router.get("/", (req,res) =>{
-    res.send("Signup")    
+    res.send("refresh token")    
 })
 
 module.exports = router;
