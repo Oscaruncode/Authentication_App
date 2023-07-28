@@ -2,8 +2,8 @@
 
 const getUserInfo = (user) => ({
     name:user.name,
-    username:user.name,
-    id:user.id
+    username:user.username,
+    id: user.id || user._id,
 })
 
 module.exports = getUserInfo

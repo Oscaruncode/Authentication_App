@@ -3,7 +3,7 @@ const { jsonResponse } = require("../lib/jsonResponse")
 const getUserInfo = require("../lib/userInfo")
 const User = require ("../schema/userSchema")
 
-router.post("/", async (req,res) =>{
+router.post("/", async function (req,res){
     const {username,password} = req.body
     
     if(!username || !password){
@@ -41,8 +41,6 @@ router.post("/", async (req,res) =>{
                   error: "Username not found",
                 }))
         }
-        
-        
         
         
     }catch(error){ console.error}

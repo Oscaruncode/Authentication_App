@@ -7,7 +7,7 @@ export interface AuthResponse{
 }
 
 export interface User{   
-        id:string;
+        _id:string;
         name:string;
         username:string;
 }
@@ -17,3 +17,11 @@ export interface AuthResponseError {
         error: string;
     }
 }
+
+export interface AccessTokenResponse {
+    statusCode: number;
+    body: {
+      accessToken: string;
+    };
+    error?: string;
+  }

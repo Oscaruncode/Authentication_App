@@ -1,7 +1,10 @@
 const router = require("express").Router()
+const { jsonResponse} = require("../lib/jsonResponse")
+const log = require("../lib/trace")
 
-router.get("/", (req,res)=> {
-    res.send("user route")
+router.get("/", async function (req,res, next){
+    log.info("user", req.user)
+    res.json(jsonResponse(200,req.user))
 })
 
 module.exports = router
